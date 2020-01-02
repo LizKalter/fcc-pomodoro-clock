@@ -1,13 +1,103 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  text-size-adjust: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+}
+
+main {
+  width: 100%;
+}
+
+#header {
+  text-align: center;
+}
+
+.pomodoro-clock {
+  //display: flex;
+  //align-items: center;
+  //justify-content: center;
+  //flex-direction: column;
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  background-color: #333;
+  border: 1px solid #ccc;
+  border-radius: .25rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.break {
+  width: 50%;
+  float: left;
+  padding-right: 1rem;
+  text-align: center;
+}
+.session {
+  width: 50%;
+  float: right;
+  padding-left: 1rem;
+  text-align: center;
+}
+
+#break-length,
+#session-length {
+  margin: 0 .5rem;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.timer {
+  clear: both;
+  padding-top: 1rem;
+}
+
+#timer-label {
+  font-size: 3rem;
+}
+
+#time-left {
+  line-height: 5rem;
+  font-size: 5rem;
+}
+
+#start_stop {
+  margin-top: .5rem;
+  border-radius: .5rem;
+  font-size: 2rem;
+}
+
+#reset {
+  margin-top: 1rem;
+}
+
+#footer {
+  margin-top: 1rem;
+  font-size: .75rem;
+  color: #ccc;
+  text-align: center;
+}
+
+#footer a {
+  color: #ccc;
 }
