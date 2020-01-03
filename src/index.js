@@ -103,7 +103,8 @@ const decrementSession = (state) => {
 	}
 }
 
-/* https://medium.com/@machadogj/timers-in-react-with-redux-apps-9a5a722162e8 */
+/* Timer based on example in Gustavo Machado's article "Timers in React Apps with Redux"
+https://medium.com/@machadogj/timers-in-react-with-redux-apps-9a5a722162e8 */
 const startTimer = () => (dispatch) => {
 	clearInterval(timer);
 	timer = setInterval(() => dispatch(tick()), 1000);
